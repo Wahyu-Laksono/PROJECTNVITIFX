@@ -1,101 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google" content="notranslate">
-    <meta property="og:title" content="Invitifx">
-    <meta property="og:description" content=" Platform Undangan Digital Profesional">
-    <meta property="og:image" content="https://invitifx.com/aset/logo/logoInvitifx.png">
-    <meta property="og:url" content="https:invitifx.com">
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-    <link rel="icon" href="aset/meta/iconInvitifx.png" type="image/png">
-    <!-- For Apple devices -->
-    <link rel="apple-touch-icon" href="aset/meta/iconInvitifx.png">
-    <!-- For Android devices -->
-    <link rel="icon" sizes="192x192" href="aset/meta/iconInvitifx.png">
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
 
-    <!-- css style -->
-    <link rel="stylesheet" href="beranda.css">
+body {
+    line-height: 1;
+}
 
-    <title>Invitifx - Platform undangan digital terbaik</title>
-    <meta name="description" content="Ubah momen spesial Anda menjadi pengalaman yang tak terlupakan dengan 
-undangan digital yang memukau. Kami menawarkan template undangan digital 
-yang dapat disesuaikan, mudah digunakan, dan ramah lingkungan.">
+ol,
+ul {
+    list-style: none;
+}
 
-    <!-- boostraps -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- link google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
+blockquote,
+q {
+    quotes: none;
+}
 
-<body>
-    <!-- nav top -->
-    <nav>
-        <a href="https://invitifx.com/">
-            <img src="aset/logo/logoInvitifxLebar.svg" alt="logo Invitifx" draggable="true"
-                ondragstart="event.dataTransfer.setData('text/plain', event.target.src)">
-        </a>
-        <ul>
-            <li><a href="#home">Beranda</a> </li>
-            <li><a href="">Template</a></li>
-            <li><a href="">Price List</a></li>
-            <li><a href="">Contact me</a></li>
-        </ul>
-        <a href="">Login/Register</a>
-    </nav>
-    <!-- nav top akhir -->
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
 
-    <!-- page1 -->
-    <section class="page1" id="home">
-        <div class="pg1">
-            <h1>Hallo, <strong>INVITIFX</strong> </h1>
-            <p>🎉 Buat momen istimewa Anda semakin istimewa dengan undangan digital dari invitifx.com! 🎉
-                <br>
-                <br>
-                Dengan desain modern dan kualitas tak tertandingi, undangan digital kami cocok untuk setiap acara
-                spesial Anda. Ayo, buat kenangan yang tak terlupakan dengan undangan dari <a
-                    href="https://invitifx.com/"><strong>Invitifx.com!</strong></a>
-            </p>
-            <a class="btn" href="#">
-                <span>Coba sekarang</span>
-                <img src="aset/arrowright.svg" alt="Arrow Right">
-            </a>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
-        </div>
-        <div class="pg2">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
-            <spline-viewer hint loading-anim-type="spinner-big-dark"
-                url="https://prod.spline.design/fCYwQcWIMe0nZVb3/scene.splinecode"></spline-viewer>
-        </div>
-        <!-- <div class="jargon">
-                <p>Jelajahi sekarang dan buat momen spesial Anda lebih bermakna!</p>
-                <a href="">
-                    <span>Coba sekarang</span>
-                    <img src="aset/arrowright.svg" alt="Arrow Right">
-                </a>
-            </div> -->
-    </section>
-    <!-- page1 akhir -->
+/* css reset akhir */
 
-    <!-- script js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+:root {
+    --clbiru: rgb(13, 17, 243);
+    --clbirutua: rgb(5, 8, 163);
+    --clpeach: rgb(255, 203, 203);
+    --clpink: rgb(255, 177, 177);
+    --clpinkwhite: rgb(255, 234, 227);
+    --clbgbiru: rgba(191, 219, 243, 0.5);
+    --clwhite: rgb(255, 255, 255);
+    --clfontdefault: rgb(0, 0, 0);
 
-    <!-- drigabel img -->
-    <script src="dragableimg.js"></script>
+}
+
+body {
+    width: 100%;
+}
+
+/* nav  */
+nav {
+    position: sticky;
+    top: 20px;
+    z-index: 999;
+    margin: auto;
+    width: 70%;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    padding: 5px 20px;
+    color: rgb(196, 198, 199);
+    background-color: var(--clbiruwhite);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    display: inline-block;
+    width: 50px;
+}
+
+nav a img {
+    width: 150px;
+}
+
+ul {
+    margin: auto;
+    display: flex;
+    height: 100%;
+}
+
+ul li a {
+    width: 100px;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 40px;
+    color: var(--clbiru);
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li a:hover {
+    color: var(--clbirutua);
+    font-weight: 550;
+}
+
+nav a:nth-of-type(2) {
+    background-color: var(--clbiru);
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: var(--clwhite);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:nth-of-type(2):hover {
+    background-color: var(--clbirutua);
+}
+
+/* nav akkhir */
+
+/* page1 */
+.page1 {
+    padding: 0;
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pg1 {
+    flex-grow: 2;
+    flex-basis: 0;
+    box-sizing: border-box;
+    padding-left: 10px 0 5px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.pg1 .btn {
+    margin: 20px o;
+    background-color: var(--clbiru);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    color: var(--clwhite);
+    text-decoration: none;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    transition: background-color 0.3s ease;
+}
+
+.pg1 .btn:hover {
+    background-color: var(--clpinkwhite);
+    color: var(--clbiru);
+}
+
+.pg1 .btn img {
+    width: 50px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.pg1 .btn img:hover {
+    transform: translateX(10px);
+    /* animasi ikon arrow right */
+}
+
+.pg2 {
+    flex-grow: 1;
+    flex-basis: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
 
 
-    <!-- disbale onekaydown klik kanan dan inspek elemen -->
-    <!-- <script src="disable.js"></script> -->
-</body>
+/* page 1 akhir */
 
-</html>
+/* media query css mobile */
+/* Perangkat mobile kecil */
+@media (max-width: 480px) {
+    .pg2{
+        padding: 0;
+    }
+  }
+  
+  /* Smartphone modern */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .pg2{
+        padding: 0;
+    }
+  }
+  
+  /* Tablet kecil */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .pg2{
+        padding: ;
+    }
+  }
+  /* media query css mobile akhir */
