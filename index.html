@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <!-- Required meta tags -->
@@ -43,13 +43,19 @@ yang dapat disesuaikan, mudah digunakan, dan ramah lingkungan.">
             <img src="aset/logo/logoInvitifxLebar.svg" alt="logo Invitifx" draggable="true"
                 ondragstart="event.dataTransfer.setData('text/plain', event.target.src)">
         </a>
-        <ul>
-            <li><a href="#home">Beranda</a> </li>
-            <li><a href="">Template</a></li>
-            <li><a href="">Price List</a></li>
-            <li><a href="">Contact me</a></li>
+        <div id="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="navbar-nav">
+            <li><a href="#home" class="navA">Beranda</a> </li>
+            <li><a href="#" class="navA">Template</a></li>
+            <li><a href="#" class="navA">Price List</a></li>
+            <li><a href="#" class="navA">Contact me</a></li>
+            <li><a href="#" class="navA">Login/Register</a></li>
         </ul>
-        <a href="">Login/Register</a>
+        
     </nav>
     <!-- nav top akhir -->
 
@@ -72,16 +78,8 @@ yang dapat disesuaikan, mudah digunakan, dan ramah lingkungan.">
         </div>
         <div class="pg2">
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
-            <spline-viewer hint loading-anim-type="spinner-big-dark"
-                url="https://prod.spline.design/fCYwQcWIMe0nZVb3/scene.splinecode"></spline-viewer>
+            <spline-viewer hint loading-anim-type="spinner-big-dark" url="https://prod.spline.design/fCYwQcWIMe0nZVb3/scene.splinecode"></spline-viewer>
         </div>
-        <!-- <div class="jargon">
-                <p>Jelajahi sekarang dan buat momen spesial Anda lebih bermakna!</p>
-                <a href="">
-                    <span>Coba sekarang</span>
-                    <img src="aset/arrowright.svg" alt="Arrow Right">
-                </a>
-            </div> -->
     </section>
     <!-- page1 akhir -->
 
@@ -93,6 +91,8 @@ yang dapat disesuaikan, mudah digunakan, dan ramah lingkungan.">
     <!-- drigabel img -->
     <script src="dragableimg.js"></script>
 
+    <!-- responsive nav -->
+     <script src="responsivenav.js"></script>
 
     <!-- disbale onekaydown klik kanan dan inspek elemen -->
     <!-- <script src="disable.js"></script> -->
