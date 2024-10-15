@@ -135,7 +135,6 @@ table {
 }
 
 /* css reset akhir */
-
 :root {
     --clbiru: rgb(13, 17, 243);
     --clbirutua: rgb(5, 8, 163);
@@ -168,8 +167,6 @@ nav {
     background-color: ;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    /* overflow: hidden; */
-
 }
 
 #toggle-menu {
@@ -189,7 +186,6 @@ ul {
     height: 100%;
 
 }
-
 
 ul li a {
     width: 100px;
@@ -272,7 +268,7 @@ nav ul li:nth-child(5) a:hover {
     }
 
     nav {
-        position: relative;
+        position: sticky;
         padding: 20px;
     }
 
@@ -324,10 +320,11 @@ nav ul li:nth-child(5) a:hover {
     padding: 0;
     margin: auto;
     width: 90%;
-    height: 100vh;
+    height: 85vh;
     background: transparent;
     display: flex;
     flex-wrap: wrap;
+    /* border: 1px solid red; */
 }
 
 .pg1 {
@@ -408,6 +405,12 @@ nav ul li:nth-child(5) a:hover {
         width: 100%;
         padding: 10px;
     }
+    .pg1{
+        text-align: center;
+    }
+    .pg1 .btn{
+        margin: auto;
+    }
 
     /* Tablet kecil */
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -415,6 +418,69 @@ nav ul li:nth-child(5) a:hover {
             padding: ;
         }
     }
+}
+
+/* media query css mobile akhir */
+
+/* page 2 */
+.page2 {
+    padding: 0;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+    border: 1px solid red;
+}
+.headpg2 {
+    text-align: center;
+}
+.kelebihanpg2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardpg2{
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.footpg2 {
+    width: 100%;
+    text-align: center;
+}
 
 
-    /* media query css mobile akhir */
+/* media query css page 2mobile */
+/* Perangkat mobile kecil */
+@media (max-width: 480px) {
+   
+}
+
+/* Smartphone modern */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 859px) {
+    .page2 {
+        width: 100%;
+        padding: 20px;
+
+    }
+    
+    .cardpg2{
+        flex: 1 1 100%; /* Membuat card mengambil lebar penuh */
+        margin: 0 0; /* Mengatur margin vertikal */
+    }
+
+    /* Tablet kecil */
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }
+}
+
+/* media query css page2 mobile akhir */
