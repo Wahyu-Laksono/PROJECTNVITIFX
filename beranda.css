@@ -140,6 +140,7 @@ table {
     --clbirutua: rgb(5, 8, 163);
     --clpeach: rgb(255, 203, 203);
     --clpink: rgb(255, 177, 177);
+    --clbgpink: rgba(255, 177, 177, .3);
     --clpinkwhite: rgb(255, 234, 227);
     --bgpinkwhite: rgba(255, 234, 227, .5);
     --clbgbiru: rgba(191, 219, 243, 0.5);
@@ -440,9 +441,9 @@ nav ul li:nth-child(5) a:hover {
     width: 100%;
     padding: 30px 5px;
     border-radius: 20px;
-    background-color: var(--bgpinkwhite);
+    background-color: var(--clbgpink);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     overflow: hidden;
 }
 
@@ -463,10 +464,10 @@ nav ul li:nth-child(5) a:hover {
     background-color: transparent!important;
     box-sizing: border-box;
     border-radius: 10px!important;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 .cardpg2:hover{
-    border: 2px solid var(--clpink);
+    border: 3px solid var(--clpink);
 }
 .btncardpg2 {
     background: transparent!important;
