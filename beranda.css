@@ -441,7 +441,7 @@ nav ul li:nth-child(5) a:hover {
     width: 100%;
     padding: 30px 5px;
     border-radius: 20px;
-    background-color: var(--clbgpink);
+    background-color: var(--bgpinkwhite);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(30px);
     overflow: hidden;
