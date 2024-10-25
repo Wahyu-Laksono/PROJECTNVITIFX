@@ -490,7 +490,7 @@ nav ul li:nth-child(5) a:hover {
 @media screen and (max-width: 859px) {
     .masterpage2 {
         width: 100%;
-        padding: 20px 3px;
+        padding: 20px 0;
         overflow: hidden;
     }
     .cardpg2 {
