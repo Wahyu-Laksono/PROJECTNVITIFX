@@ -141,6 +141,7 @@ table {
     --clpeach: rgb(255, 203, 203);
     --clpink: rgb(255, 177, 177);
     --clpinkwhite: rgb(255, 234, 227);
+    --bgpinkwhite: rgba(255, 234, 227, .5);
     --clbgbiru: rgba(191, 219, 243, 0.5);
     --clwhite: rgb(255, 255, 255);
     --clfontdefault: rgb(0, 0, 0);
@@ -339,6 +340,7 @@ nav ul li:nth-child(5) a:hover {
 }
 
 .pg1 .btn {
+    display: inline-block;
     margin: 20px o;
     background-color: var(--clbiru);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -348,12 +350,12 @@ nav ul li:nth-child(5) a:hover {
     text-decoration: none;
     width: 250px;
     height: 50px;
-    font-size: 20px;
+    font-size: 1.2rem;
     cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -405,10 +407,12 @@ nav ul li:nth-child(5) a:hover {
         width: 100%;
         padding: 10px;
     }
-    .pg1{
+
+    .pg1 {
         text-align: center;
     }
-    .pg1 .btn{
+
+    .pg1 .btn {
         margin: auto;
     }
 
@@ -423,29 +427,49 @@ nav ul li:nth-child(5) a:hover {
 /* media query css mobile akhir */
 
 /* page 2 */
-.page2 {
-    padding: 0;
-    margin: auto;
+.masterpage2 {
+    background-image: url(aset/logo/logoInvitifx.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 90%;
+    margin: 20px auto;
     height: auto;
-    padding: 20px 0;
-    border: 1px solid red;
 }
+.page2 {
+    width: 100%;
+    padding: 30px 5px;
+    border-radius: 20px;
+    background-color: var(--bgpinkwhite);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
 .headpg2 {
     text-align: center;
 }
+
 .kelebihanpg2 {
     display: flex;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
-.cardpg2{
+.cardpg2 {
     flex: 1 1 calc(33.333% - 20px);
     padding: 20px;
     margin: 10px;
-    background-color: #f0f0f0;
+    background-color: transparent!important;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 10px!important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.cardpg2:hover{
+    border: 2px solid var(--clpink);
+}
+.btncardpg2 {
+    background: transparent!important;
 }
 
 .footpg2 {
@@ -456,14 +480,10 @@ nav ul li:nth-child(5) a:hover {
 
 /* media query css page 2mobile */
 /* Perangkat mobile kecil */
-@media (max-width: 480px) {
-   
-}
+@media (max-width: 480px) {}
 
 /* Smartphone modern */
-@media (min-width: 481px) and (max-width: 767px) {
-    
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 @media screen and (max-width: 859px) {
     .page2 {
@@ -471,16 +491,167 @@ nav ul li:nth-child(5) a:hover {
         padding: 20px;
 
     }
-    
-    .cardpg2{
-        flex: 1 1 100%; /* Membuat card mengambil lebar penuh */
-        margin: 0 0; /* Mengatur margin vertikal */
+
+    .cardpg2 {
+        flex: 1 1 100%;
+        /* Membuat card mengambil lebar penuh */
+        margin: 0 0;
+        /* Mengatur margin vertikal */
     }
 
     /* Tablet kecil */
-    @media (min-width: 768px) and (max-width: 1024px) {
-
-    }
+    @media (min-width: 768px) and (max-width: 1024px) {}
 }
 
 /* media query css page2 mobile akhir */
+/* page2 akhir */
+
+/* page3 */
+.produk {
+    padding: 10px 0;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+}
+
+.produk .headercard {
+    width: 100;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contentcard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardproduk {
+    /* flexbox */
+    flex: 1 1 calc(20% - 10px);
+    padding: 10px;
+    margin: 10px;
+    /* flexboxakhri */
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--clwhite);
+}
+
+.cardproduk a{
+    display: inline-block;  
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--clbirutua);
+    text-decoration: none;
+    color: var(--clwhite);
+}
+
+.cardproduk a:hover {
+background-color: var(--clbgbiru);
+color: var(--clbirutua);
+}
+/* media query css page3 mobile */
+/* Perangkat mobile kecil */
+@media (max-width: 480px) {}
+
+/* Smartphone modern */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (max-width: 859px) {
+    .produk {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .cardproduk {
+        flex: 1 1 100%;
+        /* Membuat card mengambil lebar penuh */
+        margin: 10px 0;
+        /* Mengatur margin vertikal */
+    }
+
+    /* Tablet kecil */
+    @media (min-width: 768px) and (max-width: 1024px) {}
+}
+/* media query css page3 mobile akhir */
+/* page3 akhir */
+
+/* page 4 */
+.pricelist{
+    padding: 10px 0;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    border: 1px solid yellow;
+}
+.headprice {
+    text-align: center;
+}
+
+.cardprice {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.harga {
+    /* flexbox */
+    flex: 1 1 calc(20% - 10px);
+    padding: 10px;
+    margin: 10px;
+    /* flexboxakhri */
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+.harga ul {
+    display: flex;
+    flex-direction: column;
+}
+.submitharga a {
+    display: inline-block;  
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--clbirutua);
+    text-decoration: none;
+    color: var(--clwhite);
+}
+
+.submitharga a:hover {
+    background-color: var(--clbgbiru);
+color: var(--clbirutua);
+}
+
+/* media query css page4 mobile */
+/* Perangkat mobile kecil */
+@media (max-width: 480px) {}
+
+/* Smartphone modern */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+@media screen and (max-width: 859px) {
+    .pricelist {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .price {
+        flex: 1 1 100%;
+        /* Membuat card mengambil lebar penuh */
+        margin: 10px 0;
+        /* Mengatur margin vertikal */
+    }
+
+    /* Tablet kecil */
+    @media (min-width: 768px) and (max-width: 1024px) {}
+}
+/* media query css page4 mobile akhir */
+/* page 4 akhir */
