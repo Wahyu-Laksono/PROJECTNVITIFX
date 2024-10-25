@@ -449,6 +449,7 @@ nav ul li:nth-child(5) a:hover {
 
 .headpg2 {
     text-align: center;
+    padding: 0 5px;
 }
 
 .kelebihanpg2 {
@@ -489,12 +490,9 @@ nav ul li:nth-child(5) a:hover {
 @media screen and (max-width: 859px) {
     .masterpage2 {
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 3px;
         overflow: hidden;
     }
-.page2 {
-    border-radius: 0;
-}
     .cardpg2 {
         flex: 1 1 100%;
         /* Membuat card mengambil lebar penuh */
