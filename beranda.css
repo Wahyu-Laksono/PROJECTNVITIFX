@@ -487,12 +487,14 @@ nav ul li:nth-child(5) a:hover {
 @media (min-width: 481px) and (max-width: 767px) {}
 
 @media screen and (max-width: 859px) {
-    .pmasterpage2 {
+    .masterpage2 {
         width: 100%;
-        padding: 20px 5px;
-
+        padding: 20px 0;
+        overflow: hidden;
     }
-
+.page2 {
+    border-radius: 0;
+}
     .cardpg2 {
         flex: 1 1 100%;
         /* Membuat card mengambil lebar penuh */
